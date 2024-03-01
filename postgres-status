@@ -1,0 +1,6 @@
+if podman container exists postgres
+then
+    podman ps --filter='name=postgres' --format='{{.Status}}'
+else
+    echo 'Not started'
+fi
