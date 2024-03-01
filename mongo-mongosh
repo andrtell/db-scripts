@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if podman container exists mongo
+then
+    podman exec -it mongo mongosh
+else
+    echo 'Run: postgres-start'
+fi
