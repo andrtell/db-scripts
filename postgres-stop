@@ -1,1 +1,2 @@
-podman container stop postgres
+#!/usr/bin/env bash
+podman container stop --ignore postgres

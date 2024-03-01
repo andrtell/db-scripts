@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if podman container exists mongo
+then
+    podman ps --filter='name=mongo' --format='{{.Status}}'
+else
+    echo 'Not started'
+fi
